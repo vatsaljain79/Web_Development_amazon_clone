@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav1 {
+            background-color: black;
+            color: white;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            position: sticky;
+        }
+
+        .nav1 img {
+            height: 50px;
+            width: auto;
+            margin: 5px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .nav1 img:hover {
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .nav1 .location {
+
+            margin: 10px;
+
+
+        }
+
+        .nav1 .ind {
+
+            font-weight: bold;
+        }
+
+        #two {
+            margin-top: 30px;
+
+        }
+
+        .locbar {
+            display: flex;
+            margin: 5px 0px;
+            margin-right: 45px;
+        }
+
+        .locbar:hover {
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        .btn1,.btn2{
+
+            height: 34px;
+            text-align: center;
+            justify-content: center;
+            margin-top: 13px;
+            cursor: pointer;
+        }
+        input{
+            margin-top:13px ;
+            height: 29px;
+            width: 500px;
+            justify-content: center;
+        }
+        .btn2{
+            background-color: rgb(222, 202, 47);
+            height: 36px;
+            width: 30px;
+            margin-right: 45px;
+        }
+        .sign,.returns{
+            
+            margin: 10px 45px;
+            margin-bottom: 5px;
+            padding: 5px;
+            /* width: 200px; */
+            
+        }
+        .account,.order{
+            font-weight: bold;
+        }
+        .sign:hover,.returns:hover,.carts:hover{
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        .carts{
+            display: flex;
+            margin: 10px 5px;
+            padding: 5px;
+            height: 35px;
+        }
+        
+        .cart{
+            margin-left:5px;
+            margin-top: 12px;
+        }
+
+        .nav2{
+            height: 35px;
+            background-color: rgb(30, 48, 80);
+            color: white;
+            display: flex;
+            position: sticky;
+            flex-wrap: wrap;
+        }
+        #bar{
+            margin-top: 10px;
+            /* margin-left: 50px; */
+            margin-right: 5px;
+            font-size: 18px;
+        }
+        .all{
+            margin-top: 10px;
+        }
+        li{
+            list-style: none;
+            padding-right: 15px;
+            padding-left: 5px;
+            padding-top: 7px;
+            margin-right: 5px;
+            font-size: 18px;
+            height: 23px;
+            margin-top: -15px;
+            
+        }
+    
+        .nav2 ul{
+            display: flex;
+        }
+         
+
+        .flex:hover{
+            cursor: pointer;
+            border: 2px solid white;
+        }
+        .hero {
+            /* margin-top: -300px; */
+            height: 300px;
+            width: 100%;
+            background-image: url('hero_image.jpg');
+            background-size: 100% 600px ;
+            background-repeat: no-repeat;
+            /* border: 2px solid red; */
+            /* background-image: url(hero_image.jpg);
+            background-size: 2000px 350px;
+            object-fit:cover;
+            object-position: 0% 0%; */
+            /* z-index: -1; */
+        }
+        .amazon{
+            /* margin-top: 600px; */
+            /* justify-content: center; */
+            text-align: center;
+            margin-left: 150px;
+            /* padding-top: 100px; */
+            /* display: inline-block; */
+            width: 80%;
+            font-size: 18px;
+            border: 2px solid rebeccapurple;
+            background-color: white;
+        }
+        .fake{
+            height: 250px;
+        }
+        .hero a,.boxes a{
+            text-decoration: none;
+        }
+        .hero a:hover,.boxes a:hover{
+            text-decoration: underline;
+            color: orangered;
+        }
+        #all{
+            
+            display: flex;
+            margin-left: 50px;
+            padding: 0px 5px;
+            cursor: pointer;
+        }
+        #all:hover{
+            
+            border: 2px solid white;
+        }
+        .boxes{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box1,.box2,.box3,.box4{
+            /* display: flex; */
+            flex-wrap: wrap;
+            margin: 15px 14px;
+            width: 22%;
+            height: 410px;
+            /* border: 2px solid red; */
+            padding-left: 15px;
+            padding-top: 5px;
+            background-color: white;
+
+        }
+        .box1 img,.box2 img,.box3 img,.box4 img{
+            width: 320px;
+            height: 300px;
+            padding-top: -5px;
+        }
+        .h11{
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .box{
+            background-color: rgb(148, 144, 143);
+            flex-wrap: wrap;
+        }
+        .back{
+            background-color: rgb(30, 48, 80);
+            height: 30px;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            justify-content: center;
+            font-size: 19px;
+        }
+        .back a{
+            color: white;
+            text-decoration: none;
+        }
+        .back a:hover{
+            color: orangered;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav1" id="Top">
+        <a href="https://www.amazon.com/"><img src="amazon_logo.png" alt=""></a>
+        <div class="locbar">
+            <i class="fa-solid fa-location-dot" id="two" style="color: #ffffff;"></i>
+            <div class="location">
+                Deliver to
+                <div class="ind">India </div>
+                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
+            </div>
+        </div>
+        <button class="btn1">
+            All <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <form action="/action.php" class="forms">
+            <div class="searching">
+                <input type="text" placeholder="Search Amazon" />
+            </div>
+        </form>
+        <button class="btn2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="sign">
+            Hello, sign in
+            <div class="account">
+                Accounts & Lists
+            </div>
+        </div>
+        <div class="returns">
+            Returns
+            <div class="order">
+                & Orders
+            </div>
+        </div>
+        <div class="carts">
+            <i class="fa-solid fa-cart-shopping fa-2x" id="carts" style="color: #ffffff;"></i>
+            <div class="cart">
+                Cart
+            </div>
+        </div>
+    </div>
+    <div class="nav2">
+        <div id="all"><i class="fa-solid fa-bars " id="bar" style="color: #ffffff;"></i> 
+            <div class="all"> All</div></div>
+        
+        <div class="nav2content">
+            <ul class="content">
+                <li class="flex">Today's Deal</li>
+                <li class="flex">Customer Service</li>
+                <li class="flex">Registry</li>
+                <li class="flex">Gift Card</li>
+                <li class="flex">Sell</li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="hero">
+        <div class="fake"></div>
+        <div class="amazon">
+        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.com/">Click here to go to amazon.in</a> </div>
+    </div>
+    <div class="box">
+    <div class="boxes">
+        <div class="box1"><p class="h11">Home & Appliances </p><img src="box1_image.jpg" alt=""><br><br> <a href="">Shop Now</a></div>
+        <div class="box2"><p class="h11">Health & Personal Care</p> <img src="box2_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+        <div class="box3"><p class="h11">Furniture & Home Decor</p><img src="box3_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+        <div class="box4"><p class="h11">Electronic Devices</p><img src="box4_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+        
+    </div>
+    <div class="boxes">
+        <div class="box1"><p class="h11">Beauty Picks </p><img src="box5_image.jpg" alt=""><br><br> <a href="">Shop Now</a></div>
+        <div class="box2"><p class="h11">Pet Supplies</p> <img src="box6_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+        <div class="box3"><p class="h11">Toys-New Arrival!</p><img src="box7_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+        <div class="box4"><p class="h11">Discover Fashion Trends</p><img src="box8_image.jpg" alt=""><br><br><a href="">Shop Now</a></div>
+    </div></div>
+    <div class="back"><a href="#Top">Back To top</a></div>
+    
+</body>
+
+</html>
